@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>¿Está seguro de que desea borrar a {{data.superhero}}?</h1>
+<hr>
+<mat-dialog-content class="mat-typography">
+  <p>Esta operación no se puede deshacer, si no está seguro de desear borrarlo, cancele.</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button color="warn" (click)="borrar()" cdkFocusInitial>Borrar</button>
+  <button mat-button (click)="cancelar()" >Cancelar</button>
+</mat-dialog-actions>
